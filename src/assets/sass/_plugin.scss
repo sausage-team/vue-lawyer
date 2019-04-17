@@ -1,0 +1,32 @@
+.header-menu {
+  &.el-menu--horizontal {
+    &.el-menu {
+      background-color: transparent;
+    }
+    & > .el-menu-item {
+      color: #fff;
+      opacity: .5;
+
+      &:not(.is-disabled) {
+        &:hover,
+        &:focus {
+          color: #fff;
+          background-color: transparent;
+          opacity: .9;
+        }
+      }
+    }
+
+    &>.el-submenu {
+      .el-submenu__title {
+        &:hover {
+          background-color: transparent;
+          opacity: .9;
+        }
+      }
+    }
+  }
+}
+>.el-menu-item {
+
+}
