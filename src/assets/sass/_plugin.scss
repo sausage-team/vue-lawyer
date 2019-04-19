@@ -27,6 +27,11 @@
     }
   }
 }
->.el-menu-item {
-
+.submit-question {
+  .el-form > .el-form-item > .el-form-item__content > .el-input {
+    & > .el-input__suffix {
+      margin-top: 0;
+      line-height: 34px;
+    }
+  }
 }

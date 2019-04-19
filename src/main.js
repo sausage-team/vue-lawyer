@@ -5,6 +5,7 @@ import store from '@/stores'
 import ElementUI from 'element-ui'
 import VueLodash from 'vue-lodash'
 import VueCookies from 'vue-cookies'
+import CONSTANT from '@/beans/bean'
 import 'element-ui/lib/theme-chalk/index.css'
 import './registerServiceWorker'
 import '@/assets/sass/main.scss'
@@ -14,6 +15,7 @@ Vue.use(VueLodash, { name: 'lodash' })
 Vue.use(VueCookies)
 
 Vue.config.productionTip = false
+Vue.prototype.CONSTANT = CONSTANT
 
 const components = require.context('./components/', true, /\.vue$/)
 components.keys().forEach(key => {

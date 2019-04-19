@@ -26,6 +26,7 @@
     }
     .main {
       display: flex;
+      align-items: flex-start;
       width: 100%;
       height: calc(100% - 34px);
       margin: 10px 0 0;
@@ -34,7 +35,7 @@
 
       .left-con {
         width: 240px;
-        height: 200px;
+        min-height: 200px;
 
         .personal {
           height: 420px;
@@ -119,7 +120,7 @@
       }
       .right-con {
         width: calc(100% - 250px);
-        height: 1300px;
+        min-height: 1300px;
         margin-left: 10px;
         .content {
           span {
