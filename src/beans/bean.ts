@@ -1,5 +1,5 @@
 class CONSTANT {
-  headerTags = [
+  public headerTags: string[] = [
     '金融保险',
     '行政诉讼',
     '建筑房产',
@@ -13,14 +13,14 @@ class CONSTANT {
     '知识产权',
     '国际贸易'
   ]
-  serviceTags = [
+  public serviceTags: string[] = [
     '金融保险',
     '行政诉讼',
     '建筑房产',
     '海商海事',
     '公司法务'
   ]
-  navigator = [
+  public navigator: object[] = [
     {
       name: '湖北律师',
       href: 'http://www.cnlaw.net/hb/'
@@ -54,7 +54,7 @@ class CONSTANT {
       href: 'http://www.cnlaw.net/rank/257.htm'
     }
   ]
-  successCase = [
+  public successCase: object[] = [
     {
       name: '蒋某某民间借贷纠纷案代理词',
       href: 'http://www.cnlaw.net/html/4852.html'
@@ -128,7 +128,7 @@ class CONSTANT {
       href: 'http://www.cnlaw.net/html/2020.html'
     }
   ]
-  civil = [
+  public civil: object[] = [
     {
       name: '离婚诉讼要经过的三个程序',
       href: 'http://www.cnlaw.net/html/907.html'
@@ -170,7 +170,7 @@ class CONSTANT {
       href: 'http://www.cnlaw.net/html/4247.html'
     }
   ]
-  debet = [
+  public debet: object[] = [
     {
       name: '合同一般包括哪些条款？',
       href: 'http://www.cnlaw.net/html/37.html'
@@ -212,7 +212,7 @@ class CONSTANT {
       href: 'http://www.cnlaw.net/html/4883.html'
     }
   ]
-  contract = [
+  public contract: object = [
     {
       name: '水水货物联运合同',
       href: 'http://www.cnlaw.net/html/1859.html'
@@ -254,7 +254,7 @@ class CONSTANT {
       href: 'http://www.cnlaw.net/html/1779.html'
     }
   ]
-  crinimal = [
+  public crinimal: object[] = [
     {
       name: '非法买卖制毒物品罪',
       href: 'http://www.cnlaw.net/html/1276.html'

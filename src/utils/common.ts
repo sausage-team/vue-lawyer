@@ -1,5 +1,5 @@
 class Util {
-  hello () {
+  public hello (): void {
     console.log('world')
   }
 }

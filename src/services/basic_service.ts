@@ -1,14 +1,26 @@
 import axios from 'axios'
 
-class BasicService {
+type PROMISE = (data: object) => void
+
+interface Service {
+  GET (url: string, data: object, resolve: PROMISE): void
+  POST (url: string, data: object, resolve: PROMISE): void
+  PUT (url: string, data: object, resolve: PROMISE): void
+  DELETE (url: string, resolve: PROMISE): void
+  PATCH (url: string, data: object, resolve: PROMISE): void
+}
+
+class BasicService implements Service {
+  private $http: any
+
   constructor () {
     this.$http = axios
   }
 
-  TEMPLATE_GET (url, data, resolve) {
+  public GET (url: string, data: object, resolve: PROMISE) {
     this.$http.get(url, {
       params: data || {}
-    }).then(res => {
+    }).then((res: any) => {
       if (res.status === 200 && res.data.status === 0) {
         resolve(res.data)
       } else {
@@ -20,9 +32,9 @@ class BasicService {
     })
   }
 
-  TEMPLATE_POST (url, data, resolve) {
+  public POST (url: string, data: object, resolve: PROMISE) {
     this.$http.post(url, data || {})
-      .then(res => {
+      .then((res: any) => {
         if (res.status === 200 && res.data.status === 0) {
           resolve(res.data)
         } else {
@@ -34,9 +46,9 @@ class BasicService {
       })
   }
 
-  TEMPLATE_PUT (url, data, resolve) {
+  public PUT (url: string, data: object, resolve: PROMISE) {
     this.$http.put(url, data || {})
-      .then(res => {
+      .then((res: any) => {
         if (res.status === 200 && res.data.status === 0) {
           resolve(res.data)
         } else {
@@ -48,9 +60,9 @@ class BasicService {
       })
   }
 
-  TEMPLATE_DELETE (url, resolve) {
+  public DELETE (url: string, resolve: PROMISE) {
     this.$http.delete(url)
-      .then(res => {
+      .then((res: any) => {
         if (res.status === 200 && res.data.status === 0) {
           resolve(res.data)
         } else {
@@ -62,9 +74,9 @@ class BasicService {
       })
   }
 
-  TEMPLATE_PATCH (url, data, resolve) {
+  public PATCH (url: string, data: object, resolve: PROMISE) {
     this.$http.patch(url, data || {})
-      .then(res => {
+      .then((res: any) => {
         if (res.status === 200 && res.data.status === 0) {
           resolve(res.data)
         } else {

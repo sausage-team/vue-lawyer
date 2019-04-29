@@ -198,7 +198,10 @@ export default {
     submitForm () {
       this.$refs['form'].validate((valid) => {
         if (valid) {
-          alert('submit!')
+          this.$store.dispatch('backHome', 'home').then(res => {
+            console.log(`now in home/vue ${this.$store.state.home.author}`)
+            console.log(`now in home/vue: promise response ${res}`)
+          })
         } else {
           return false
         }
