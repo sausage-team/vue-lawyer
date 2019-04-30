@@ -16,3 +16,11 @@ $root_dir: '../images/';
   background-size: cover;
   background-image: url('#{$root_dir}/#{$img}')
 }
+
+@mixin icon-lawyeryp {
+  @include icon('lawyeryp.gif')
+}
+
+@mixin icon-photo {
+  @include icon('photo.jpg')
+}

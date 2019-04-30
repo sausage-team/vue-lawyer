@@ -37,6 +37,7 @@ const mutations: any = {
 }
 
 export default {
+  namespaced: true,
   state,
   actions,
   mutations,

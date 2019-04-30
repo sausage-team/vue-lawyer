@@ -39,6 +39,16 @@
 
         .personal {
           height: 420px;
+          .i-photo {
+            @include icon-photo;
+            width: 130px;
+            height: 170px;
+          }
+          .i-lawyeryp {
+            @include icon-lawyeryp;
+            width: 88px;
+            height: 33px;
+          }
           .content {
             display: grid;
             justify-content: center;

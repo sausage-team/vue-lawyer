@@ -19,13 +19,13 @@
         <div class="left-con">
           <default-card card-title="任金城律师" class="personal">
             <template v-slot:content>
-              <img src="../assets/images/photo.jpg"/>
+              <span class="i-photo"></span>
               <span>任金城律师</span>
               <span>湖北·荆州·荆州市</span>
               <span>电话:{{mobile}}</span>
               <span>中国法网加盟律师</span>
               <span>已帮助 <em class="emphasis">1</em> 人解决了法律难题</span>
-              <img src="../assets/images/lawyeryp.gif" alt="">
+              <span class="i-lawyeryp" alt=""></span>
             </template>
           </default-card>
           <default-card card-title="律师档案" class="resume">
