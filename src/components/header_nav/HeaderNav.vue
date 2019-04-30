@@ -19,17 +19,7 @@
     </div>
   </div>
 </template>
-<script>
-export default {
-  props: {
-  },
-  data () {
-    return {
-      activeIndex: '1'
-    }
-  },
-  methods: {
-    handleSelect (key, keyPath) {}
-  }
-}
+<script lang="ts">
+import entry from './entry'
+export default entry
 </script>

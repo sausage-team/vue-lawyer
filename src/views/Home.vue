@@ -164,52 +164,7 @@
     <div class="home-footer"></div>
   </div>
 </template>
-<script>
-export default {
-  name: 'home',
-  components: {},
-  data () {
-    return {
-      form: {
-        province: '湖北',
-        city: '荆州',
-        comeweb: '荆州市L23384_R',
-        phone: '',
-        place: '',
-        desc: ''
-      },
-      formRules: {
-        phone: [
-          { type: 'number', required: true, message: '请输入正确手机号', trigger: 'blur' }
-        ],
-        place: [
-          { required: true, message: '请输入事发地点', trigger: 'blur' }
-        ],
-        desc: [
-          { required: true, message: '请输入咨询内容', trigger: 'blur' }
-        ]
-      },
-      phone: '0716-xxxxxxx',
-      mobile: '13972119198',
-      companyMapAddress: 'http://api.map.baidu.com/geocoder?address=监利县容城镇宝合门路12号&output=html'
-    }
-  },
-  methods: {
-    submitForm () {
-      this.$refs['form'].validate((valid) => {
-        if (valid) {
-          this.$store.dispatch('backHome', 'home').then(res => {
-            console.log(`now in home/vue ${this.$store.state.home.author}`)
-            console.log(`now in home/vue: promise response ${res}`)
-          })
-        } else {
-          return false
-        }
-      })
-    },
-    resetForm () {
-      this.$refs['form'].resetFields()
-    }
-  }
-}
+<script lang="ts">
+import entry from './entry'
+export default entry
 </script>

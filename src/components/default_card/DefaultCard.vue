@@ -13,12 +13,7 @@
     </div>
   </div>
 </template>
-<script>
-export default {
-  name: 'default-card',
-  props: {
-    cardTitle: String,
-    data: Array
-  }
-}
+<script lang="ts">
+import entry from './entry'
+export default entry
 </script>

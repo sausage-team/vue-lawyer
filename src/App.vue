@@ -4,6 +4,7 @@
     <router-view class="app-main" />
   </div>
 </template>
-<script>
-export default {}
+<script lang="ts">
+import entry from './entry'
+export default entry
 </script>
