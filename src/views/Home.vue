@@ -189,8 +189,8 @@ export default {
           { required: true, message: '请输入咨询内容', trigger: 'blur' }
         ]
       },
-      phone: '0716-8888888',
-      mobile: '13333333333',
+      phone: '0716-xxxxxxx',
+      mobile: '13972119198',
       companyMapAddress: 'http://api.map.baidu.com/geocoder?address=监利县容城镇宝合门路12号&output=html'
     }
   },
